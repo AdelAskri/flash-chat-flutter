@@ -1,0 +1,15 @@
+Index: lib/main.dart
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- lib/main.dart	(revision f62e70d5a6c38c7737e05b02231d62e0973a4944)
++++ lib/main.dart	(date 1627070307685)
+@@ -7,6 +7,7 @@
+ void main() => runApp(FlashChat());
+ 
+ class FlashChat extends StatelessWidget {
++  //dazd
+   @override
+   Widget build(BuildContext context) {
+     return MaterialApp(
