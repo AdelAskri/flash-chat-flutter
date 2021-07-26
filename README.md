@@ -1,7 +1,7 @@
 ![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
 
 ## Disclaimer
-I do not own the initial idea of the project all the starting project belong to https://www.londonappbrewery.com/ and i m using this for learning purposes only  
+I do not own the initial idea of the project all the starting project belong to https://www.londonappbrewery.com/ and i m using it for learning purposes only  
 # Flash Chat ⚡️
 
 ## Our Goal
