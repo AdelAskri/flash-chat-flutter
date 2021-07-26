@@ -4,6 +4,7 @@ import 'package:flash_chat/screens/login_screen.dart';
 import 'package:flash_chat/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flash_chat/components/rounded_button.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String id = '/welcome';
@@ -13,6 +14,8 @@ class WelcomeScreen extends StatefulWidget {
 }
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,19 +50,25 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             SizedBox(
               height: 48.0,
             ),
-            RoundedButton(
-              backgroundColor: kLoginButtonColor,
-              label: 'Log In',
-              function: () {
-                Navigator.pushNamed(context, LoginScreen.id);
-              },
+            Hero(
+              tag: 'login',
+              child: RoundedButton(
+                backgroundColor: kLoginButtonColor,
+                label: 'Log In',
+                function: () {
+                  Navigator.pushNamed(context, LoginScreen.id);
+                },
+              ),
             ),
-            RoundedButton(
-              backgroundColor: kRegisterButtonColor,
-              label: 'Register',
-              function: () {
-                Navigator.pushNamed(context, RegistrationScreen.id);
-              },
+            Hero(
+              tag: 'register',
+              child: RoundedButton(
+                backgroundColor: kRegisterButtonColor,
+                label: 'Register',
+                function: () {
+                  Navigator.pushNamed(context, RegistrationScreen.id);
+                },
+              ),
             ),
           ],
         ),
@@ -67,4 +76,3 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     );
   }
 }
-

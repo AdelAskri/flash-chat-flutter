@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "694288414617",
+    "project_id": "flash-chat-4f6be",
+    "storage_bucket": "flash-chat-4f6be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694288414617:android:63530cdeba6e501220c508",
+        "android_client_info": {
+          "package_name": "co.adelaskri.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694288414617-o7sdejldfepogu73ad8meugj0v7kbf35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsBVIwOKh0O1tkMkZXVJJosHRIriJZRtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694288414617-o7sdejldfepogu73ad8meugj0v7kbf35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
