@@ -112,6 +112,7 @@ class StreamBuilderWidget1 extends StatelessWidget {
             sender: messageSender,
             isMe: user.email == messageSender,
           );
+
           messageWidgets.add(messageWidget);
         }
         return Expanded(
